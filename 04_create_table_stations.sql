@@ -1,0 +1,14 @@
+-- Crear Tabla stations
+
+USE metro_cdmx;
+
+CREATE TABLE `stations`(
+	`id` BIGINT(20) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+
+    `name` VARCHAR(50) NOT NULL,
+    
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP()
+)
+DEFAULT CHARSET = utf8mb4
+COLLATE = utf8mb4_unicode_ci;

@@ -1,0 +1,13 @@
+USE metro_cdmx;
+
+CREATE TABLE `drivers` (
+    `id` BIGINT(20) UNSIGNED PRIMARY KEY  NOT NULL AUTO_INCREMENT,
+
+    `name` VARCHAR(20) NOT NULL,
+    `status` BOOLEAN NOT NULL DEFAULT false,
+
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
+    `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP() 
+)
+DEFAULT CHARSET = utf8mb4
+COLLATE = utf8mb4_unicode_ci;
